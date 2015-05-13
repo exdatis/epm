@@ -1,0 +1,117 @@
+unit umain;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, FileUtil, BCPanel, DividerBevel, uPoweredby, Forms,
+  Controls, Graphics, Dialogs, ActnList, Menus, ComCtrls, ExtCtrls, LCLIntf;
+
+type
+
+  { TfrmMain }
+
+  TfrmMain = class(TForm)
+    acQuitApp: TAction;
+    acAbout: TAction;
+    ActionListMain: TActionList;
+    DividerBevelMain: TDividerBevel;
+    ImageRDBMS: TImage;
+    ImagePrj: TImage;
+    panelForms: TBCPanel;
+    ImageListMain: TImageList;
+    MainMnu: TMainMenu;
+    MenuItem1: TMenuItem;
+    MenuItem2: TMenuItem;
+    MenuItem3: TMenuItem;
+    Panel1: TPanel;
+    Poweredby1: TPoweredby;
+    StatusBarMain: TStatusBar;
+    ToolBar1: TToolBar;
+    ToolButton1: TToolButton;
+    procedure acAboutExecute(Sender: TObject);
+    procedure acQuitAppExecute(Sender: TObject);
+    procedure DividerBevelMainClick(Sender: TObject);
+    procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
+    procedure FormShow(Sender: TObject);
+    procedure ImageRDBMSClick(Sender: TObject);
+    procedure panelFormsResize(Sender: TObject);
+  private
+    { private declarations }
+  public
+    { public declarations }
+  end;
+
+var
+  frmMain: TfrmMain;
+
+implementation
+uses
+  udm, uabout;
+{$R *.lfm}
+
+{ TfrmMain }
+
+procedure TfrmMain.FormClose(Sender: TObject; var CloseAction: TCloseAction);
+begin
+  CloseAction:= caFree;
+  self:= nil;
+  Application.Terminate;
+end;
+
+procedure TfrmMain.FormShow(Sender: TObject);
+begin
+  Poweredby1.ShowPoweredByForm;
+end;
+
+procedure TfrmMain.ImageRDBMSClick(Sender: TObject);
+const
+  FIREBIRD_HOME : String = 'http://www.firebirdsql.org/';
+begin
+  Screen.Cursor:= crHourGlass;
+  try
+    OpenURL(FIREBIRD_HOME);
+  finally
+    Screen.Cursor:= crDefault;
+  end;
+end;
+
+procedure TfrmMain.panelFormsResize(Sender: TObject);
+begin
+  panelForms.Update;
+  Application.ProcessMessages;
+end;
+
+procedure TfrmMain.acQuitAppExecute(Sender: TObject);
+begin
+  self.Close;
+end;
+
+procedure TfrmMain.acAboutExecute(Sender: TObject);
+var
+  newDlg : TfrmAbout;
+begin
+  Screen.Cursor:= crHourGlass;
+  try
+    newDlg:= TfrmAbout.Create(nil);
+    newDlg.ShowModal;
+  finally
+    Screen.Cursor:= crDefault;
+  end;
+end;
+
+procedure TfrmMain.DividerBevelMainClick(Sender: TObject);
+const
+  MAIL_TO : String = 'mailto:exdatis@yahoo.com';
+begin
+  Screen.Cursor:= crHourGlass;
+  try
+    OpenURL(MAIL_TO);
+  finally
+    Screen.Cursor:= crDefault;
+  end;
+end;
+
+end.
+

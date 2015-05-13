@@ -1,0 +1,183 @@
+object dm: Tdm
+  OldCreateOrder = False
+  Height = 403
+  HorizontalOffset = 383
+  VerticalOffset = 204
+  Width = 740
+  object dbh: TIBConnection
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = '/home/morar/exdatis/epm.fdb'
+    KeepConnection = False
+    Password = 'Fpc013'
+    Transaction = sqlt
+    UserName = 'exdatis'
+    CharSet = 'utf8'
+    HostName = 'localhost'
+    LogEvents = []
+    left = 29
+    top = 22
+  end
+  object sqlt: TSQLTransaction
+    Active = True
+    Action = caNone
+    Database = dbh
+    left = 31
+    top = 87
+  end
+  object qGeneral: TSQLQuery
+    FieldDefs = <>
+    Database = dbh
+    Transaction = sqlt
+    Params = <>
+    left = 41
+    top = 162
+  end
+  object qPrj: TSQLQuery
+    PacketRecords = -1
+    IndexName = 'DEFAULT_ORDER'
+    FieldDefs = <    
+      item
+        Name = 'P_ID'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'P_CODE'
+        DataType = ftString
+        Precision = -1
+        Size = 120
+      end    
+      item
+        Name = 'P_NAME'
+        DataType = ftString
+        Precision = -1
+        Size = 280
+      end    
+      item
+        Name = 'P_SUBJECT'
+        DataType = ftString
+        Precision = -1
+        Size = 360
+      end    
+      item
+        Name = 'P_DESC'
+        DataType = ftMemo
+        Precision = -1
+        Size = 8
+      end>
+    Active = True
+    Database = dbh
+    Transaction = sqlt
+    SQL.Strings = (
+      'SELECT'
+      '  a.P_ID,'
+      '  a.P_CODE,'
+      '  a.P_NAME,'
+      '  a.P_SUBJECT,'
+      '  a.P_DESC'
+      'FROM'
+      '  PRJ a'
+      'ORDER BY'
+      '  a.P_ID'
+    )
+    UpdateSQL.Strings = (
+      'UPDATE PRJ A'
+      'SET'
+      '  A.P_CODE = :P_CODE,'
+      '  A.P_NAME = :P_NAME,'
+      '  A.P_SUBJECT = :P_SUBJECT,'
+      '  A.P_DESC = :P_DESC'
+      'WHERE'
+      '  A.P_ID = :P_ID'
+    )
+    InsertSQL.Strings = (
+      'INSERT INTO'
+      '  PRJ'
+      '  (P_ID,'
+      '   P_CODE,'
+      '   P_NAME,'
+      '   P_SUBJECT,'
+      '   P_DESC)'
+      ' VALUES ('
+      '   :P_ID,'
+      '   :P_CODE,'
+      '   :P_NAME,'
+      '   :P_SUBJECT,'
+      '   :P_DESC)'
+    )
+    DeleteSQL.Strings = (
+      'DELETE FROM'
+      '  PRJ'
+      'WHERE'
+      '  P_ID = :P_ID'
+      ''
+    )
+    Params = <>
+    left = 117
+    top = 26
+    object qPrjP_ID: TLongintField
+      Alignment = taLeftJustify
+      DisplayLabel = 'ID'
+      DisplayWidth = 5
+      FieldKind = fkData
+      FieldName = 'P_ID'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qPrjP_CODE: TStringField
+      DisplayLabel = 'Code'
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'P_CODE'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 120
+    end
+    object qPrjP_NAME: TStringField
+      DisplayLabel = 'Name'
+      DisplayWidth = 15
+      FieldKind = fkData
+      FieldName = 'P_NAME'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 280
+    end
+    object qPrjP_SUBJECT: TStringField
+      DisplayLabel = 'Subject'
+      DisplayWidth = 15
+      FieldKind = fkData
+      FieldName = 'P_SUBJECT'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 360
+    end
+    object qPrjP_DESC: TMemoField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'P_DESC'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Visible = False
+      BlobType = ftBlob
+      Size = 8
+      Transliterate = False
+    end
+  end
+end
