@@ -1,7 +1,7 @@
 object frmMain: TfrmMain
-  Left = 213
+  Left = 237
   Height = 621
-  Top = 230
+  Top = 219
   Width = 1023
   Caption = 'ExDatis - project manager'
   ClientHeight = 599
@@ -184,7 +184,7 @@ object frmMain: TfrmMain
     TabOrder = 2
   end
   object panelForms: TBCPanel
-    Left = 230
+    Left = 232
     Height = 550
     Top = 30
     Width = 788
@@ -248,11 +248,11 @@ object frmMain: TfrmMain
     OnResize = panelFormsResize
     object ImagePrj: TImage
       Cursor = crHandPoint
-      Left = 637
-      Height = 146
+      Left = 640
+      Height = 129
       Hint = 'Project-manager'
-      Top = 392
-      Width = 137
+      Top = 377
+      Width = 131
       Anchors = [akTop, akLeft, akRight, akBottom]
       ParentShowHint = False
       Picture.Data = {
@@ -343,11 +343,11 @@ object frmMain: TfrmMain
     end
     object DividerBevelMain: TDividerBevel
       Cursor = crHandPoint
-      Left = 13
+      Left = 23
       Height = 16
       Hint = 'exdatis@yahoo.com'
-      Top = 49
-      Width = 755
+      Top = 509
+      Width = 748
       Caption = 'ExDatis software solution'
       Anchors = [akTop, akLeft, akRight]
       Font.Color = clOlive
@@ -359,11 +359,11 @@ object frmMain: TfrmMain
     end
     object ImageRDBMS: TImage
       Cursor = crHandPoint
-      Left = 675
+      Left = 2
       Height = 23
       Hint = 'www.firebirdsql.org/'
-      Top = 42
-      Width = 80
+      Top = 1
+      Width = 82
       Anchors = [akTop, akLeft, akRight, akBottom]
       OnClick = ImageRDBMSClick
       ParentShowHint = False
@@ -928,6 +928,9 @@ object frmMain: TfrmMain
     top = 70
     object MenuItem1: TMenuItem
       Caption = 'EPM'
+      object MenuItem4: TMenuItem
+        Action = acAbout
+      end
       object MenuItem2: TMenuItem
         Caption = '-'
       end
@@ -980,7 +983,7 @@ object frmMain: TfrmMain
     About.Description.Strings = (
       'Component that shows a Powered By graphic.'#10'Use method ShowPoweredByForm in your form.create()'#10'to use the component'
     )
-    About.Title = 'PoweredBy component'
+    About.Title = 'About PoweredBy component'
     About.Height = 280
     About.Width = 400
     About.Font.Color = clNavy

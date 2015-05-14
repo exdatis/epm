@@ -1,0 +1,88 @@
+object frmDb: TfrmDb
+  Left = 420
+  Height = 550
+  Top = 180
+  Width = 788
+  BorderStyle = bsNone
+  Caption = 'frmDb'
+  ClientHeight = 550
+  ClientWidth = 788
+  Font.Height = -11
+  OnClose = FormClose
+  LCLVersion = '1.4.0.4'
+  object panelBtns: TPanel
+    Left = 0
+    Height = 50
+    Top = 500
+    Width = 788
+    Align = alBottom
+    TabOrder = 0
+  end
+  object ActionsDb: TActionList
+    Images = frmMain.ImageListMain
+    left = 192
+    top = 223
+    object acNew: TAction
+      Caption = 'New'
+      Hint = 'New record'
+      OnExecute = acNewExecute
+      ShortCut = 16462
+    end
+    object acDelete: TAction
+      Caption = 'Delete'
+      Hint = 'Delete'
+      OnExecute = acDeleteExecute
+      ShortCut = 16452
+    end
+    object acSave: TAction
+      Caption = 'Save'
+      Hint = 'Save'
+      OnExecute = acSaveExecute
+      ShortCut = 16467
+    end
+    object acCancel: TAction
+      Caption = 'Cancel'
+      Hint = 'Cancel'
+      OnExecute = acCancelExecute
+      ShortCut = 16474
+    end
+    object acEdit: TAction
+      Caption = 'Edit'
+      Hint = 'Edit record'
+      OnExecute = acEditExecute
+      ShortCut = 16453
+    end
+    object acRefresh: TAction
+      Caption = 'R'
+      Hint = 'Refresh'
+      OnExecute = acRefreshExecute
+      ShortCut = 16466
+    end
+    object acFirst: TAction
+      Caption = '<<'
+      Hint = 'First record'
+      OnExecute = acFirstExecute
+    end
+    object acPrior: TAction
+      Caption = '<'
+      Hint = 'Prior record'
+      OnExecute = acPriorExecute
+    end
+    object acNext: TAction
+      Caption = '>'
+      Hint = 'Next record'
+      OnExecute = acNextExecute
+    end
+    object acLast: TAction
+      Caption = '>>'
+      Hint = 'Last record'
+      OnExecute = acLastExecute
+    end
+    object acCloseForm: TAction
+      Caption = 'Close'
+      Hint = 'Close form'
+      OnExecute = acCloseFormExecute
+      ShortCut = 16499
+    end
+  end
+end

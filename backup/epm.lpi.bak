@@ -17,7 +17,7 @@
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
       <MajorVersionNr Value="1"/>
-      <BuildNr Value="1"/>
+      <BuildNr Value="3"/>
       <StringTable Comments="Made by Morar" CompanyName="ExDatis" FileDescription="Project manager" InternalName="Epm" LegalCopyright="ExDatis-personal" LegalTrademarks="ExDatis-personal" OriginalFilename="epm" ProductName="epm" ProductVersion="1"/>
     </VersionInfo>
     <BuildModes Count="1">
@@ -51,7 +51,7 @@
         <PackageName Value="LCL"/>
       </Item6>
     </RequiredPackages>
-    <Units Count="4">
+    <Units Count="6">
       <Unit0>
         <Filename Value="epm.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -76,9 +76,24 @@
         <Filename Value="dialogs/uabout.pp"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmAbout"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uabout"/>
       </Unit3>
+      <Unit4>
+        <Filename Value="ufrmdb.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmDb"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="ufrmdb"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="dialogs/udecide.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="dlgDecide"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="udecide"/>
+      </Unit5>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

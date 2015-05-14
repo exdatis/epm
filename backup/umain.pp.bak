@@ -19,6 +19,7 @@ type
     DividerBevelMain: TDividerBevel;
     ImageRDBMS: TImage;
     ImagePrj: TImage;
+    MenuItem4: TMenuItem;
     panelForms: TBCPanel;
     ImageListMain: TImageList;
     MainMnu: TMainMenu;
