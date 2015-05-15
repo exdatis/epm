@@ -18,7 +18,7 @@ begin
   Application.Initialize;
   Application.CreateForm(TfrmMain, frmMain);
   Application.CreateForm(Tdm, dm);
-  Application.CreateForm(TfrmDb, frmDb);
+  //Application.CreateForm(TfrmDb, frmDb);  {* base form *}
   //Application.CreateForm(TdlgDecide, dlgDecide);
   //Application.CreateForm(TfrmAbout, frmAbout);
   Application.Run;

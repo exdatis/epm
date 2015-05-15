@@ -17,7 +17,7 @@
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
       <MajorVersionNr Value="1"/>
-      <BuildNr Value="4"/>
+      <BuildNr Value="6"/>
       <StringTable Comments="Made by Morar" CompanyName="ExDatis" FileDescription="Project manager" InternalName="Epm" LegalCopyright="ExDatis-personal" LegalTrademarks="ExDatis-personal" OriginalFilename="epm" ProductName="epm" ProductVersion="1"/>
     </VersionInfo>
     <BuildModes Count="1">
@@ -78,12 +78,12 @@
         <ComponentName Value="frmAbout"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="uabout"/>
       </Unit3>
       <Unit4>
         <Filename Value="ufrmdb.pp"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmDb"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="ufrmdb"/>
       </Unit4>
@@ -92,7 +92,6 @@
         <IsPartOfProject Value="True"/>
         <ComponentName Value="dlgDecide"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="udecide"/>
       </Unit5>
     </Units>
   </ProjectOptions>

@@ -7,9 +7,9 @@
       <Unit0>
         <Filename Value="epm.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="2"/>
-        <CursorPos X="5" Y="22"/>
-        <UsageCount Value="31"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="46" Y="18"/>
+        <UsageCount Value="37"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
@@ -19,9 +19,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="umain"/>
-        <TopLine Value="45"/>
-        <CursorPos X="21" Y="99"/>
-        <UsageCount Value="31"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="25"/>
+        <CursorPos X="14" Y="56"/>
+        <UsageCount Value="37"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
@@ -32,9 +33,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="DataModule"/>
         <UnitName Value="udm"/>
-        <EditorIndex Value="3"/>
-        <CursorPos X="41" Y="31"/>
-        <UsageCount Value="31"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="33" Y="18"/>
+        <UsageCount Value="37"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit2>
@@ -44,157 +45,50 @@
         <ComponentName Value="frmAbout"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="uabout"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="109"/>
         <CursorPos X="34" Y="133"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="35"/>
       </Unit3>
       <Unit4>
         <Filename Value="ufrmdb.pp"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmDb"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="ufrmdb"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="288"/>
-        <CursorPos X="14" Y="173"/>
-        <UsageCount Value="28"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="106"/>
+        <CursorPos X="3" Y="108"/>
+        <UsageCount Value="34"/>
       </Unit4>
       <Unit5>
         <Filename Value="dialogs/udecide.pp"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="dlgDecide"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="udecide"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="23" Y="4"/>
-        <UsageCount Value="27"/>
+        <UsageCount Value="33"/>
       </Unit5>
     </Units>
-    <JumpHistory Count="30" HistoryIndex="29">
+    <JumpHistory Count="4" HistoryIndex="3">
       <Position1>
         <Filename Value="umain.pp"/>
-        <Caret Line="51" Column="15" TopLine="29"/>
+        <Caret Line="100" Column="21" TopLine="63"/>
       </Position1>
       <Position2>
         <Filename Value="umain.pp"/>
-        <Caret Line="98" Column="21" TopLine="72"/>
+        <Caret Line="122" Column="42" TopLine="88"/>
       </Position2>
       <Position3>
-        <Filename Value="ufrmdb.pp"/>
+        <Filename Value="umain.pp"/>
+        <Caret Line="47" Column="27" TopLine="17"/>
       </Position3>
       <Position4>
-        <Filename Value="ufrmdb.pp"/>
-        <Caret Line="34" Column="14"/>
+        <Filename Value="umain.pp"/>
+        <Caret Line="94" Column="36" TopLine="89"/>
       </Position4>
-      <Position5>
-        <Filename Value="ufrmdb.pp"/>
-        <Caret Line="55" Column="59" TopLine="30"/>
-      </Position5>
-      <Position6>
-        <Filename Value="ufrmdb.pp"/>
-        <Caret Line="43" Column="58" TopLine="28"/>
-      </Position6>
-      <Position7>
-        <Filename Value="ufrmdb.pp"/>
-        <Caret Line="44" Column="58" TopLine="29"/>
-      </Position7>
-      <Position8>
-        <Filename Value="ufrmdb.pp"/>
-        <Caret Line="46" Column="58" TopLine="31"/>
-      </Position8>
-      <Position9>
-        <Filename Value="ufrmdb.pp"/>
-        <Caret Line="78" Column="12" TopLine="74"/>
-      </Position9>
-      <Position10>
-        <Filename Value="ufrmdb.pp"/>
-        <Caret Line="80" Column="12" TopLine="76"/>
-      </Position10>
-      <Position11>
-        <Filename Value="ufrmdb.pp"/>
-        <Caret Line="85" Column="15" TopLine="83"/>
-      </Position11>
-      <Position12>
-        <Filename Value="ufrmdb.pp"/>
-        <Caret Line="92" Column="15" TopLine="90"/>
-      </Position12>
-      <Position13>
-        <Filename Value="ufrmdb.pp"/>
-        <Caret Line="87" Column="13" TopLine="85"/>
-      </Position13>
-      <Position14>
-        <Filename Value="ufrmdb.pp"/>
-        <Caret Line="89" Column="13" TopLine="87"/>
-      </Position14>
-      <Position15>
-        <Filename Value="ufrmdb.pp"/>
-        <Caret Line="99" Column="15" TopLine="97"/>
-      </Position15>
-      <Position16>
-        <Filename Value="ufrmdb.pp"/>
-        <Caret Line="106" Column="15" TopLine="104"/>
-      </Position16>
-      <Position17>
-        <Filename Value="ufrmdb.pp"/>
-        <Caret Line="101" Column="13" TopLine="99"/>
-      </Position17>
-      <Position18>
-        <Filename Value="ufrmdb.pp"/>
-        <Caret Line="108" Column="13" TopLine="106"/>
-      </Position18>
-      <Position19>
-        <Filename Value="ufrmdb.pp"/>
-        <Caret Line="63" Column="21" TopLine="39"/>
-      </Position19>
-      <Position20>
-        <Filename Value="ufrmdb.pp"/>
-        <Caret Line="65" Column="21" TopLine="41"/>
-      </Position20>
-      <Position21>
-        <Filename Value="ufrmdb.pp"/>
-        <Caret Line="115" Column="14" TopLine="111"/>
-      </Position21>
-      <Position22>
-        <Filename Value="ufrmdb.pp"/>
-        <Caret Line="122" Column="14" TopLine="118"/>
-      </Position22>
-      <Position23>
-        <Filename Value="ufrmdb.pp"/>
-        <Caret Line="97" Column="14" TopLine="95"/>
-      </Position23>
-      <Position24>
-        <Filename Value="ufrmdb.pp"/>
-        <Caret Line="104" Column="14" TopLine="102"/>
-      </Position24>
-      <Position25>
-        <Filename Value="ufrmdb.pp"/>
-        <Caret Line="99" Column="13" TopLine="97"/>
-      </Position25>
-      <Position26>
-        <Filename Value="ufrmdb.pp"/>
-        <Caret Line="101" Column="13" TopLine="99"/>
-      </Position26>
-      <Position27>
-        <Filename Value="ufrmdb.pp"/>
-        <Caret Line="64" Column="21" TopLine="43"/>
-      </Position27>
-      <Position28>
-        <Filename Value="ufrmdb.pp"/>
-        <Caret Line="66" Column="21" TopLine="45"/>
-      </Position28>
-      <Position29>
-        <Filename Value="ufrmdb.pp"/>
-        <Caret Line="77" Column="22" TopLine="60"/>
-      </Position29>
-      <Position30>
-        <Filename Value="ufrmdb.pp"/>
-        <Caret Line="66" Column="41" TopLine="48"/>
-      </Position30>
     </JumpHistory>
   </ProjectSession>
 </CONFIG>

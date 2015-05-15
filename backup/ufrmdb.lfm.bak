@@ -12,11 +12,160 @@ object frmDb: TfrmDb
   LCLVersion = '1.4.0.4'
   object panelBtns: TPanel
     Left = 0
-    Height = 50
-    Top = 500
+    Height = 30
+    Top = 520
     Width = 788
     Align = alBottom
+    ClientHeight = 30
+    ClientWidth = 788
     TabOrder = 0
+    object btnFirst: TButton
+      Cursor = crHandPoint
+      Left = 3
+      Height = 25
+      Top = 3
+      Width = 75
+      Action = acFirst
+      Anchors = [akTop, akLeft, akRight]
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 0
+    end
+    object btnPrior: TButton
+      Cursor = crHandPoint
+      Left = 79
+      Height = 25
+      Top = 3
+      Width = 75
+      Action = acPrior
+      Anchors = [akTop, akLeft, akRight]
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 1
+    end
+    object btnNext: TButton
+      Cursor = crHandPoint
+      Left = 155
+      Height = 25
+      Top = 3
+      Width = 75
+      Action = acNext
+      Anchors = [akTop, akLeft, akRight]
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 2
+    end
+    object btnLast: TButton
+      Cursor = crHandPoint
+      Left = 231
+      Height = 25
+      Top = 3
+      Width = 75
+      Action = acLast
+      Anchors = [akTop, akLeft, akRight]
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 3
+    end
+    object btnNew: TButton
+      Cursor = crHandPoint
+      Left = 307
+      Height = 25
+      Top = 3
+      Width = 75
+      Action = acNew
+      Anchors = [akTop, akLeft, akRight]
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 4
+    end
+    object btnDelete: TButton
+      Cursor = crHandPoint
+      Left = 383
+      Height = 25
+      Top = 3
+      Width = 75
+      Action = acDelete
+      Anchors = [akTop, akLeft, akRight]
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 5
+    end
+    object btnSave: TButton
+      Cursor = crHandPoint
+      Left = 459
+      Height = 25
+      Top = 3
+      Width = 75
+      Action = acSave
+      Anchors = [akTop, akLeft, akRight]
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 6
+    end
+    object btnCancel: TButton
+      Cursor = crHandPoint
+      Left = 535
+      Height = 25
+      Top = 3
+      Width = 75
+      Action = acCancel
+      Anchors = [akTop, akLeft, akRight]
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 7
+    end
+    object btnEdit: TButton
+      Cursor = crHandPoint
+      Left = 611
+      Height = 25
+      Top = 3
+      Width = 75
+      Action = acEdit
+      Anchors = [akTop, akLeft, akRight]
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 8
+    end
+    object btnRefresh: TButton
+      Cursor = crHandPoint
+      Left = 687
+      Height = 25
+      Top = 3
+      Width = 22
+      Action = acRefresh
+      Anchors = [akTop, akLeft, akRight]
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 9
+    end
+    object btnClose: TButton
+      Cursor = crHandPoint
+      Left = 710
+      Height = 25
+      Top = 3
+      Width = 75
+      Action = acCloseForm
+      Anchors = [akTop, akLeft, akRight]
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 10
+    end
+  end
+  object lblFormCaption: TLabel
+    Left = 0
+    Height = 16
+    Top = 0
+    Width = 788
+    Align = alTop
+    Alignment = taCenter
+    Caption = 'lblFormCaption'
+    Color = clGray
+    Font.Color = clCream
+    Font.Height = -11
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
   end
   object ActionsDb: TActionList
     Images = frmMain.ImageListMain

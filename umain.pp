@@ -34,6 +34,8 @@ type
     procedure acAboutExecute(Sender: TObject);
     procedure acQuitAppExecute(Sender: TObject);
     procedure DividerBevelMainClick(Sender: TObject);
+    procedure DividerBevelMainMouseEnter(Sender: TObject);
+    procedure DividerBevelMainMouseLeave(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormShow(Sender: TObject);
     procedure ImageRDBMSClick(Sender: TObject);
@@ -42,6 +44,8 @@ type
     { private declarations }
   public
     { public declarations }
+    //Morar: close old form (before create new)
+    procedure freeOldForm;
   end;
 
 var
@@ -84,6 +88,15 @@ begin
   Application.ProcessMessages;
 end;
 
+procedure TfrmMain.freeOldForm;
+const
+  MAX_CTRLS : Shortint = 3;
+begin
+  if panelForms.ControlCount > MAX_CTRLS then
+    TForm(panelForms.Controls[MAX_CTRLS]).Close;
+
+end;
+
 procedure TfrmMain.acQuitAppExecute(Sender: TObject);
 begin
   self.Close;
@@ -112,6 +125,18 @@ begin
   finally
     Screen.Cursor:= crDefault;
   end;
+end;
+
+procedure TfrmMain.DividerBevelMainMouseEnter(Sender: TObject);
+begin
+  DividerBevelMain.Font.Color:= clCream;
+  DividerBevelMain.Font.Underline:= True;
+end;
+
+procedure TfrmMain.DividerBevelMainMouseLeave(Sender: TObject);
+begin
+  DividerBevelMain.Font.Color:= clOlive;
+  DividerBevelMain.Font.Underline:= False;
 end;
 
 end.

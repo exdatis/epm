@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, ExtCtrls,
-  ActnList, sqldb, db;
+  ActnList, StdCtrls, sqldb, db;
 
 type
 
@@ -25,6 +25,18 @@ type
     acLast: TAction;
     acCloseForm: TAction;
     ActionsDb: TActionList;
+    btnFirst: TButton;
+    btnPrior: TButton;
+    btnNext: TButton;
+    btnLast: TButton;
+    btnNew: TButton;
+    btnDelete: TButton;
+    btnSave: TButton;
+    btnCancel: TButton;
+    btnEdit: TButton;
+    btnRefresh: TButton;
+    btnClose: TButton;
+    lblFormCaption: TLabel;
     panelBtns: TPanel;
     procedure acCancelExecute(Sender: TObject);
     procedure acCloseFormExecute(Sender: TObject);
@@ -77,6 +89,7 @@ type
     procedure onNextRec(var dataSet : TSQLQuery);
     procedure onLastRec(var dataSet : TSQLQuery);
     procedure onRefresh(var dataSet : TSQLQuery; const keyName : String);
+    procedure onReopenDataSet(var dataSet : TSQLQuery);
     procedure onCheckDataSets(var dataSet : TSQLQuery);
   end;
 
@@ -170,7 +183,7 @@ end;
 
 procedure TfrmDb.doCancelRec;
 begin
-
+  // override
 end;
 
 procedure TfrmDb.doEditRec;
@@ -314,6 +327,20 @@ begin
   finally
     TSQLQuery(dataSet).EnableControls;
     Screen.Cursor:= crDefault;
+  end;
+end;
+
+procedure TfrmDb.onReopenDataSet(var dataSet: TSQLQuery);
+begin
+  //close and open again
+  Screen.Cursor:= crSQLWait;
+  TSQLQuery(dataSet).DisableControls;
+  try
+    TSQLQuery(dataSet).Close;
+    TSQLQuery(dataSet).Open;
+  finally
+    Screen.Cursor:= crDefault;
+    TSQLQuery(dataSet).EnableControls;
   end;
 end;
 

@@ -356,6 +356,8 @@ object frmMain: TfrmMain
       ParentShowHint = False
       ShowHint = True
       OnClick = DividerBevelMainClick
+      OnMouseEnter = DividerBevelMainMouseEnter
+      OnMouseLeave = DividerBevelMainMouseLeave
     end
     object ImageRDBMS: TImage
       Cursor = crHandPoint
@@ -983,7 +985,7 @@ object frmMain: TfrmMain
     About.Description.Strings = (
       'Component that shows a Powered By graphic.'#10'Use method ShowPoweredByForm in your form.create()'#10'to use the component'
     )
-    About.Title = 'About PoweredBy component'
+    About.Title = 'About About PoweredBy component'
     About.Height = 280
     About.Width = 400
     About.Font.Color = clNavy
